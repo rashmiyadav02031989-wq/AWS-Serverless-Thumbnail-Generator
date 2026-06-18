@@ -89,13 +89,36 @@ Validated output by checking the `output/` folder for generated thumbnails.
 - All image processing is handled in AWS Lambda, ensuring no sensitive credentials are exposed in the frontend.
 - S3 event notifications are used instead of polling, reducing attack surface and unnecessary API exposure.
 - Access to frontend is controlled via S3 static hosting or CloudFront distribution (if enabled).
+
 ## Project Outcome
 
-Built a fully serverless, event-driven image processing system using AWS services. The application automatically generates thumbnails when users upload images.
+Built a fully serverless, event-driven image processing system using AWS services. The application automatically generates thumbnails when users upload images.  
+
+## Skills Demonstrated
+
+- Amazon S3 (Object Storage & Event Notifications)
+- AWS Lambda (Event-driven backend processing using Python)
+- IAM Roles & Permissions (Least Privilege Access Control)
+- Frontend Development (HTML, CSS, JavaScript)
+- Event-driven system design (S3 → Lambda workflow)
+- Cloud-based image processing pipeline
+- Debugging and integration of AWS services
+- Building scalable and cost-efficient cloud applications
 
 ## Repository Structure
 ```text
 lambda/ - AWS Lambda function code
 frontend/ - HTML UI for uploading images
 screenshots/ - Project UI and output images
-architecture/ - System architecture diagram
+architecture/ - System architecture diagram  
+
+## Future Improvements
+
+- Add support for multiple image formats (JPEG, PNG, WEBP) with validation
+- Enable dynamic thumbnail sizing options (small, medium, large)
+- Integrate AWS DynamoDB to store image metadata and processing status
+- Add user authentication using AWS Cognito for secure access control
+- Implement image compression to reduce storage and improve performance
+- Add progress tracking or status updates for uploaded images
+- Use CloudFront CDN for faster delivery of thumbnails globally
+- Add a frontend dashboard to manage uploaded images and thumbnails
