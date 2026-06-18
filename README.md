@@ -19,7 +19,7 @@ F --> G[Process Image<br/>Generate Thumbnail]
 
 G --> H[Upload Thumbnail to S3 Output Folder]
 
-H --> I[User Views Output Thumbnails via S3 / CloudFront]
+H --> I[User Gets The Message Of Thumbnail Creation]
 
 subgraph S3_Buckets
 C
