@@ -32,12 +32,13 @@ E
 F
 G
 end
+```
 ## AWS Services Used
 - Amazon S3
 - AWS Lambda
 - IAM Roles
 - (Optional) CloudFront for frontend hosting
-```
+
 ## Features
 - Automatic thumbnail generation
 - Event-driven processing (S3 → Lambda)
