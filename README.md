@@ -1,7 +1,13 @@
 # AWS-Serverless-Thumbnail-Generator
 
 ## Overview
-A fully serverless image processing system that automatically generates thumbnails when users upload images to Amazon S3. The system uses AWS Lambda triggered by S3 events and stores processed thumbnails in a separate output folder.
+A fully serverless image processing system that automatically generates thumbnails when users upload images to Amazon S3. The system uses AWS Lambda triggered by S3 events and stores processed thumbnails in a separate output folder.  
+
+## Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: AWS Lambda (Python, Boto3)
+- Storage: Amazon S3 (Input & Output buckets)
+- Event Trigger: S3 Event Notifications
 
 ## Architecture
 ```mermaid
