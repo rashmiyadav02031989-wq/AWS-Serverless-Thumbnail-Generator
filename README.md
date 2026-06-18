@@ -117,8 +117,6 @@ architecture/ - System architecture diagram
 - Add support for multiple image formats (JPEG, PNG, WEBP) with validation
 - Enable dynamic thumbnail sizing options (small, medium, large)
 - Integrate AWS DynamoDB to store image metadata and processing status
-- Add user authentication using AWS Cognito for secure access control
 - Implement image compression to reduce storage and improve performance
 - Add progress tracking or status updates for uploaded images
 - Use CloudFront CDN for faster delivery of thumbnails globally
-- Add a frontend dashboard to manage uploaded images and thumbnails
