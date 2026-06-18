@@ -111,7 +111,7 @@ lambda/ - AWS Lambda function code
 frontend/ - HTML UI for uploading images
 screenshots/ - Project UI and output images
 architecture/ - System architecture diagram  
-
+```
 ## Future Improvements
 
 - Add support for multiple image formats (JPEG, PNG, WEBP) with validation
