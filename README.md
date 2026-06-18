@@ -79,7 +79,16 @@ Inside Lambda:
 Tested the workflow by uploading images from the frontend and verifying automatic thumbnail generation.
 
 **Step 8:**  
-Validated output by checking the `output/` folder for generated thumbnails.
+Validated output by checking the `output/` folder for generated thumbnails.  
+## Security Best Practices
+
+- Files are uploaded securely using S3-controlled access instead of exposing the bucket publicly.
+- AWS IAM roles are used for Lambda with least-privilege permissions (only required S3 access is granted).
+- S3 bucket is configured to restrict public access to prevent unauthorized file access.
+- Input and output folders are logically separated to isolate raw uploads from processed thumbnails.
+- All image processing is handled in AWS Lambda, ensuring no sensitive credentials are exposed in the frontend.
+- S3 event notifications are used instead of polling, reducing attack surface and unnecessary API exposure.
+- Access to frontend is controlled via S3 static hosting or CloudFront distribution (if enabled).
 
 ## Repository Structure
 ```text
