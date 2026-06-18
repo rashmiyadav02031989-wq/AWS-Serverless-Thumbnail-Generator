@@ -37,7 +37,7 @@ end
 - Amazon S3
 - AWS Lambda
 - IAM Roles
-- (Optional) CloudFront for frontend hosting
+- CloudFront for frontend hosting
 
 ## Features
 - Automatic thumbnail generation
