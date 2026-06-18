@@ -4,6 +4,7 @@
 A fully serverless image processing system that automatically generates thumbnails when users upload images to Amazon S3. The system uses AWS Lambda triggered by S3 events and stores processed thumbnails in a separate output folder.
 
 ## Architecture
+```mermaid
 flowchart TD
 
 A[User] --> B[Frontend - S3 Static Website Bucket]
@@ -36,7 +37,7 @@ end
 - AWS Lambda
 - IAM Roles
 - (Optional) CloudFront for frontend hosting
-
+```
 ## Features
 - Automatic thumbnail generation
 - Event-driven processing (S3 → Lambda)
