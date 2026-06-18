@@ -1,0 +1,1 @@
+# AWS-Serverless-Thumbnail-Generator
