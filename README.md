@@ -90,6 +90,12 @@ Validated output by checking the `output/` folder for generated thumbnails.
 - S3 event notifications are used instead of polling, reducing attack surface and unnecessary API exposure.
 - Access to frontend is controlled via S3 static hosting or CloudFront distribution (if enabled).
 
+## Screenshots
+Below are key UI flows of the application:       
+### Website Homepage
+
+![Website Homepage](screenshots/website-homepage.png)
+
 ## Project Outcome
 
 Built a fully serverless, event-driven image processing system using AWS services. The application automatically generates thumbnails when users upload images.  
