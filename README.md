@@ -134,15 +134,28 @@ Built a fully serverless, event-driven image processing system using AWS service
 - Event-driven system design (S3 → Lambda workflow)
 - Cloud-based image processing pipeline
 - Debugging and integration of AWS services
-- Building scalable and cost-efficient cloud applications
+- Building scalable and cost-efficient cloud applications  
 
-## Repository Structure
-```text
-lambda/ - AWS Lambda function code
-frontend/ - HTML UI for uploading images
-screenshots/ - Project UI and output images
-architecture/ - System architecture diagram  
-```
+## Repository Structure  
+AWS-Serverless-Thumbnail-Generator/
+├── lambda/
+│   ├── generate-upload-url.py
+│   ├── thumbnail-generator.py
+├── index.html
+├── screenshots/
+│   ├── file-upload.PNG
+│   ├── upload-success.png
+│   ├── s3-input-folder.png
+│   ├── thumbnail-generated.png
+│   ├── before-after-comparison.png
+│   └── lambda-success.png
+│
+├── architecture/
+│   └── architecture-diagram.png
+│
+├── README.md
+├── .gitignore
+└── LICENSE
 ## Future Improvements
 
 - Add support for multiple image formats (JPEG, PNG, WEBP) with validation
