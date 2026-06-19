@@ -114,7 +114,7 @@ Below are key UI flows of the application:
 
 ### Actual Image Uploaded in S3 Bucket
 
-![Actual Image Uploaded In S3 Bucket](screenshots/original-image-uploaded.heic))
+![Actual Image Uploaded In S3 Bucket](screenshots/original-image-uploaded.heic)
 
 ### Actual Thumbnail Generated For Uploaded Image
 
@@ -143,12 +143,13 @@ AWS-Serverless-Thumbnail-Generator/
 │   ├── thumbnail-generator.py
 ├── index.html
 ├── screenshots/
+│   ├── homepage.PNG
 │   ├── file-upload.PNG
-│   ├── upload-success.png
-│   ├── s3-input-folder.png
+│   ├── file-uploaded.heic
+│   ├── thumbnail-created.heic
 │   ├── thumbnail-generated.png
-│   ├── before-after-comparison.png
-│   └── lambda-success.png
+│   ├── original-image-uploaded.heic
+│   └── thumbnail-generated-for-original-image.png
 │
 ├── architecture/
 │   └── architecture-diagram.png
