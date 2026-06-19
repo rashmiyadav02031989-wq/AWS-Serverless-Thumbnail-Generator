@@ -114,11 +114,11 @@ Below are key UI flows of the application:
 
 ### Actual Image Uploaded in S3 Bucket
 
-![Actual Image Uploaded In S3 Bucket](screenshots/website-homepage.png)
+![Actual Image Uploaded In S3 Bucket](screenshots/original-image-uploaded.heic))
 
 ### Actual Thumbnail Generated For Uploaded Image
 
-![Actual Thumbnail Generated For Uploaded Image](screenshots/website-homepage.png)
+![Actual Thumbnail Generated For Uploaded Image]()
 
 
 ## Project Outcome
