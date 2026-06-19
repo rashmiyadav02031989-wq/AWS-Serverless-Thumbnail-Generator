@@ -104,17 +104,22 @@ Below are key UI flows of the application:
 
 ![Thumbnail Generation](screenshots/thumbnail.PNG)
 
-### Website Homepage
+### Uploaded File in S3 Bucket
 
-![Website Homepage](screenshots/website-homepage.png)
+![Uploaded File In S3 Bucket](screenshots/file-uploaded.heic)
 
-### Website Homepage
+### Thumbnail Created in S3 Bucket
 
-![Website Homepage](screenshots/website-homepage.png)
+![Thumbnail Created In S3 Bucket](screenshots/thumbnail-created.heic)
 
-### Website Homepage
+### Actual Image Uploaded in S3 Bucket
 
-![Website Homepage](screenshots/website-homepage.png)
+![Actual Image Uploaded In S3 Bucket](screenshots/website-homepage.png)
+
+### Actual Thumbnail Generated For Uploaded Image
+
+![Actual Thumbnail Generated For Uploaded Image](screenshots/website-homepage.png)
+
 
 ## Project Outcome
 
