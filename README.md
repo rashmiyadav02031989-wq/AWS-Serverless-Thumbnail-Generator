@@ -141,8 +141,7 @@ Built a fully serverless, event-driven image processing system using AWS service
 AWS-Serverless-Thumbnail-Generator/  
 ├── lambda/  
 │   ├── generate-upload-url.py  
-│   ├── thumbnail-generator.py  
-├── index.html  
+│   ├── thumbnail-generator.py    
 ├── screenshots/  
 │   ├── homepage.PNG  
 │   ├── file-upload.PNG  
@@ -151,7 +150,8 @@ AWS-Serverless-Thumbnail-Generator/
 │   ├── thumbnail-generated.png  
 │   ├── original-image-uploaded.heic  
 │   └── thumbnail-generated-for-original-image.png  
-├── README.md  
+├── README.md
+├── index.html  
 ```
 ## Future Improvements
 
