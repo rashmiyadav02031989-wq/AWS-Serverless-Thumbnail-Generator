@@ -118,7 +118,7 @@ Below are key UI flows of the application:
 
 ### Actual Thumbnail Generated For Uploaded Image
 
-![Actual Thumbnail Generated For Uploaded Image]()
+![Actual Thumbnail Generated For Uploaded Image](screenshots/thumbnail-generated-for-original-image.png)
 
 
 ## Project Outcome
