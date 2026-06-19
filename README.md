@@ -94,11 +94,11 @@ Validated output by checking the `output/` folder for generated thumbnails.
 Below are key UI flows of the application:       
 ### Website Homepage
 
-![Website Homepage](screenshots/website-homepage.png)
+![Website Homepage](screenshots/homepage.PNG)
 
-### Website Homepage
+### File Upload
 
-![Website Homepage](screenshots/website-homepage.png)
+![File Upload](screenshots/file-upload.PNG)
 
 ### Website Homepage
 
