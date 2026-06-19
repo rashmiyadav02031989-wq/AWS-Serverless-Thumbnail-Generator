@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS Thumbnail Generator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .container {
+            background: white;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1 {
+            color: #232f3e;
+        }
+
+        button {
+            background: #ff9900;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e68a00;
+        }
+
+        #message {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>AWS Thumbnail Generator</h1>
+
+    <input type="file" id="fileInput">
+    <br><br>
+
+    <button onclick="uploadFile()">Upload Image</button>
+
+    <div id="message"></div>
+</div>
+
+<script>
+async function uploadFile() {
+
+    const file = document.getElementById("fileInput").files[0];
+
+    if (!file) {
+        alert("Select a file first");
+        return;
+    }
+
+    try {
+
+        const apiUrl =
+            "https://lhnnp16px4.execute-api.us-east-1.amazonaws.com/Input?filename="
+            + encodeURIComponent(file.name);
+
+        const res = await fetch(apiUrl);
+const data = await res.json();
+
+const body = data.body ? JSON.parse(data.body) : data;
+
+const uploadURL = body.uploadURL;
+const storedFileName = body.storedFileName;
+
+//console.log("storedFileName:", storedFileName);
+        //alert("storedFileName:"+storedFileName);
+
+        const uploadResponse = await fetch(uploadURL, {
+            method: "PUT",
+            body: file
+        });
+
+        if (uploadResponse.ok) {
+
+            alert("Upload successful!");
+            checkThumbnail(storedFileName);
+
+        } else {
+            alert("Upload failed: " + uploadResponse.status);
+        }
+
+    } catch (e) {
+        alert("Error = " + e.message);
+    }
+}
+
+async function checkThumbnail(filename) {
+
+    const intervalId = setInterval(async () => {
+
+        try {
+
+            const url =
+                "https://lhnnp16px4.execute-api.us-east-1.amazonaws.com/Input"
+                + "?filename=" + encodeURIComponent(filename)
+                + "&checkThumbnail=true";  //here we are specifying api gateway uri an not s3 path to.look files into
+
+            const response = await fetch(url);
+            const data = await response.json();
+
+            // SAFE parsing again
+            const body = data.body ? JSON.parse(data.body) : data;
+
+            //alert("thumbnail response:"+body);
+
+            if (body.status === "ready") {
+
+                alert("Thumbnail created successfully!");
+						document.getElementById('fileInput').value = '';
+                clearInterval(intervalId);
+
+            } else {
+
+                alert("Still processing...");
+
+            }
+
+        } catch (error) {
+
+            console.error(error);
+            alert("Error checking thumbnail status");
+            clearInterval(intervalId);
+        }
+
+    }, 3000);
+}
+</script>
+
+</body>
+</html>
