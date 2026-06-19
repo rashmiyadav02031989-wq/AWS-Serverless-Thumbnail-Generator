@@ -96,6 +96,26 @@ Below are key UI flows of the application:
 
 ![Website Homepage](screenshots/website-homepage.png)
 
+### Website Homepage
+
+![Website Homepage](screenshots/website-homepage.png)
+
+### Website Homepage
+
+![Website Homepage](screenshots/website-homepage.png)
+
+### Website Homepage
+
+![Website Homepage](screenshots/website-homepage.png)
+
+### Website Homepage
+
+![Website Homepage](screenshots/website-homepage.png)
+
+### Website Homepage
+
+![Website Homepage](screenshots/website-homepage.png)
+
 ## Project Outcome
 
 Built a fully serverless, event-driven image processing system using AWS services. The application automatically generates thumbnails when users upload images.  
