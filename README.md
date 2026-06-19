@@ -100,9 +100,9 @@ Below are key UI flows of the application:
 
 ![File Upload](screenshots/file-upload.PNG)
 
-### Website Homepage
+### Thumbnail Generation
 
-![Website Homepage](screenshots/website-homepage.png)
+![Thumbnail Generation](screenshots/thumbnail.PNG)
 
 ### Website Homepage
 
