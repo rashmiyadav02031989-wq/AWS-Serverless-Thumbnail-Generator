@@ -137,6 +137,7 @@ Built a fully serverless, event-driven image processing system using AWS service
 - Building scalable and cost-efficient cloud applications  
 
 ## Repository Structure  
+```
 AWS-Serverless-Thumbnail-Generator/  
 ├── lambda/  
 │   ├── generate-upload-url.py  
@@ -151,7 +152,7 @@ AWS-Serverless-Thumbnail-Generator/
 │   ├── original-image-uploaded.heic  
 │   └── thumbnail-generated-for-original-image.png  
 ├── README.md  
-
+```
 ## Future Improvements
 
 - Add support for multiple image formats (JPEG, PNG, WEBP) with validation
