@@ -72,7 +72,7 @@ async function uploadFile() {
     try {
 
         const apiUrl =
-            "https://lhnnp16px4.execute-api.us-east-1.amazonaws.com/Input?filename="
+            "Your-API/Input?filename="
             + encodeURIComponent(file.name);
 
         const res = await fetch(apiUrl);
@@ -112,7 +112,7 @@ async function checkThumbnail(filename) {
         try {
 
             const url =
-                "https://lhnnp16px4.execute-api.us-east-1.amazonaws.com/Input"
+                "Your-API/Input"
                 + "?filename=" + encodeURIComponent(filename)
                 + "&checkThumbnail=true";  //here we are specifying api gateway uri an not s3 path to.look files into
 
